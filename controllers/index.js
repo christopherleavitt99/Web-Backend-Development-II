@@ -1,7 +1,7 @@
 const mongodb = require('../db/connect');
 
 const awesomeFunction = (req, res, next) => {
-  res.json('Sarah Birch');
+  res.json('Denise Leavit');
 };
 
 const returnAnotherPerson = (req, res, next) => {
