@@ -1,8 +1,9 @@
 const routes = require('express').Router();
 
-routes.get('/', (req, res) => {
-    res.send('Denise Leavitt');
-});
+const myController = require('../controllers');
+
+routes.get('/', myController.awesomeFunction);
+routes.get('/awesome', myController.returnAnotherPerson);
+routes.get('/mongoData', myController.getMongoData);
 
 module.exports = routes;
-
