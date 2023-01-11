@@ -1,22 +1,20 @@
-
-
 {
     "name": "webBackendDevelopment",
     "version": "1.0.0",
     "description": "code for the cse341 course",
     "main": "server.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "nodemon server.js"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js",
+        "server": "nodemon server.js"
     },
-    
     "author": "Christopher Leavitt",
     "license": "ISC",
-    
     "dependencies": {
-      "express": "^4.17.3"
+        "express": "^4.18.2",
+        "mongoose": "^6.8.3"
     },
     "devDependencies": {
-      "nodemon": "^2.0.15"
+        "nodemon": "^2.0.20"
     }
-  }
+}

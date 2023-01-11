@@ -1,5 +1,15 @@
 const dotenv = require('dotenv');
 dotenv.config();
+const URI = "mongodb+srv://dbUser:dbUserPassword@cluster0.ipzyavp.mongodb.net/?retryWrites=true&w=majority"
+
+const connectDB = async()=>{
+  await mongoose.connect(URI, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+  });
+  console.log('db connected..!');
+};
+
 const MongoClient = require('mongodb').MongoClient;
 let _db;
 const initDb = (callback) => {
